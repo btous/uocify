@@ -1,0 +1,22 @@
+// importa tipografía desde google fonts
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;600;700;900&display=swap");
+
+
+/* defineix variables */
+$h1-font-size: 1.7rem;
+$h2-font-size: 1.4rem;
+$h3-font-size: 1.2rem;
+$h4-font-size: 0.8rem;
+$normal-font-size: 0.7rem;
+$uocify-color: rgb(231, 106, 106);
+$uocify-color-transparent: rgba(231, 106, 106, 0.2);
+$transition-hover: all .5s ease;
+
+@mixin ellipsis() {
+    text-overflow: ellipsis; //all browsers
+
+    @-moz-document url-prefix() {
+        //Firefox
+        text-overflow: "...";
+    }
+}
